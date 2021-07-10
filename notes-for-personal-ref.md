@@ -13,3 +13,16 @@ Since the audio data is all about dynamic evolution of frequency components over
 The segmenting of the signal could be done by making use of Windowing function to signal.
 
 ![image](https://user-images.githubusercontent.com/60335981/125161790-f6b56780-e1a1-11eb-8d8e-42e60d89f838.png)
+
+
+### Recipe to extract Mel-Spectrograms:
+
+1. Extract STFT
+2. Convert Amplitude to DBs
+3. Convert Frequencies to Mel-scale.
+
+### Convert Frequencies to Mel-Scale:
+
+1. Choose number of Mel-Bands
+2. Construct Mel-Filter Banks
+3. Apply Mel-Filter to Spectrograms
